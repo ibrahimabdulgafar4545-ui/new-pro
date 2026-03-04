@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
     --color-primary: #0d9488;
     --color-primary-hover: #0f766e;
     --color-bg: #f0f9ff;
@@ -13,7 +13,10 @@
 
 @layer base {
     body {
-        @apply bg-bg text-text font-sans antialiased;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
 }
 
